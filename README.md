@@ -135,7 +135,7 @@ Each plugin is defined **once**, in the [Agent Plugins 1.0](https://agent-plugin
 
 What an adapter may duplicate:
 - **Marketplace catalogs:** plugin name, source path, short description, and version (where the format has one).
-- **`.claude-plugin/plugin.json`:** name, displayName, version, description, author, homepage, repository, license, and keywords, plus `privacyPolicyUrl`, which the Claude directory listing reads and which mirrors `extensions.com.openai.interface.privacyPolicyURL`. It sets `"mcpServers": "./mcp.json"`, so there is no second MCP config.
+- **`.claude-plugin/plugin.json`:** name, displayName, version, description, author, homepage, repository, license, and keywords, plus `privacyPolicyUrl` and `termsOfServiceUrl`, which the Claude directory listing reads and which mirror `extensions.com.openai.interface.privacyPolicyURL` and `termsOfServiceURL`. It sets `"mcpServers": "./mcp.json"`, so there is no second MCP config.
 - **Skills:** never duplicated.
 
 Files deliberately **not** included:
