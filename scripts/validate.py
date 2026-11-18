@@ -193,9 +193,10 @@ def check_claude_adapter(plugin_dir: Path, canonical: dict, mcp_urls: dict[str, 
     display = interface.get("displayName")
     if display and adapter.get("displayName") != display:
         error(path, "displayName differs from extensions.com.openai.interface.displayName")
-    # The Claude directory lists the plugin with this URL and warns when it is missing.
-    if adapter.get("privacyPolicyUrl") != interface.get("privacyPolicyURL"):
-        error(path, "privacyPolicyUrl differs from extensions.com.openai.interface.privacyPolicyURL")
+    # The Claude directory lists the plugin with these links (it warns when the privacy policy is missing).
+    for claude_key, openai_key in (("privacyPolicyUrl", "privacyPolicyURL"), ("termsOfServiceUrl", "termsOfServiceURL")):
+        if adapter.get(claude_key) != interface.get(openai_key):
+            error(path, f"{claude_key} differs from extensions.com.openai.interface.{openai_key}")
     if adapter.get("mcpServers") != "./mcp.json":
         error(path, "mcpServers must be './mcp.json' so Claude reuses the canonical MCP config")
 

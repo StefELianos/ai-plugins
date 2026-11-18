@@ -12,5 +12,6 @@
   "license": "Apache-2.0",
   "keywords": ["apptweak", "aso", "app-store", "google-play", "keywords", "competitors", "market-intelligence"],
   "privacyPolicyUrl": "https://www.apptweak.com/en/legal/privacy-policy",
+  "termsOfServiceUrl": "https://www.apptweak.com/en/legal/terms-of-services",
   "mcpServers": "./mcp.json"
 }
