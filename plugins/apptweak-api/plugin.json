@@ -22,11 +22,12 @@
     "com.openai": {
       "interface": {
         "displayName": "AppTweak API",
-        "shortDescription": "Search the AppTweak API docs and run API requests while you code.",
+        "shortDescription": "Build with the AppTweak API",
         "longDescription": "Build software on top of the AppTweak API: search and read the API documentation, find the right endpoint and parameters, and execute API requests directly from your coding agent. Designed for developers writing integrations, scripts, and automations.",
         "developerName": "AppTweak",
         "category": "Developer Tools",
         "websiteURL": "https://www.apptweak.com",
+        "supportURL": "https://help.apptweak.com/en/",
         "privacyPolicyURL": "https://www.apptweak.com/en/legal/privacy-policy",
         "termsOfServiceURL": "https://www.apptweak.com/en/legal/terms-of-services",
         "defaultPrompt": [
